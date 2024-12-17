@@ -1,4 +1,4 @@
-import React, {useState, useEeffect} from "react";
+import React, {useState, useEffect} from "react";
 import {Button, Form} from 'react-bootstrap';
 import "bootstrap/dist/css/bootstrap.min.css";
 import Employees from './Employees';
@@ -22,7 +22,7 @@ function Edit(){
         a.Age=age;
         history("/");
     }
-    useEeffect((()=>{
+    useEffect((()=>{
         setId(localStorage.getItem('Id'))
         setName(localStorage.getItem('Name'))
         setAge(localStorage.getItem('Age'))
